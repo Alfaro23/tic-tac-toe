@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-tac toy</title>
+    <script src="https://use.fontawesome.com/f142200566.js"></script>
+</head>
+
+<body>
+    <div id="info">
+        <div></div>
+        <div>Игра "Крестики-нолики"</div>
+        <div class="help"><u>Помощь</u></div>
+    </div>
+    <div class="help__block" style="display: none;">
+        <p>1. Перед началом игры выберете себе оппонента.</p>
+        <p>2. Выберете кем будете играть (крестиком/ноликом).</p>
+        <p>3. При возникновении непредвиденных ошибок перезагрузите страницу.</p>
+        <p>4. Начинайте игру.</p>
+    </div>
+    <div id="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <section class="choose__block" style="display: none;">
+        <p>Выберете кем будете играть: </p>
+        <img src="крест.png" alt="Крестик" class="cross">
+        <img src="круг.png" alt="Нолик" class="zero">
+    </section>
+    <footer>
+        <h1>Выберете с кем будете играть</h1>
+        <div id="choose_play">
+            <div id="computer">
+                <i class="fa fa-laptop fa-5x" aria-hidden="true"></i>
+                Компьютер
+            </div>
+            <div id="user">
+                <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                Два игрока
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="code.js"></script>
+    <script src="help.js"></script>
+</body>
+
+</html>
